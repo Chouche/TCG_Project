@@ -19,7 +19,7 @@ public class CardDisplay : MonoBehaviour {
         nameText.text = card.name;
         atqText.text = card.atq.ToString();
         defText.text = card.def.ToString();
-
+        artworkImage.sprite = card.artwork;
 	}
 	
 }

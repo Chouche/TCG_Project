@@ -1,23 +1,23 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Champion : MonoBehaviour {
 
+    public Card card;
     public int atk;
     public int def;
-    private string name;
-    public Renderer rend;
+    public string name;
     bool hasFought;
     public Player player;
+    public Image stateImage;
+    
 
 	// Use this for initialization
 	void Start () {
-        RandomAtkandDef();
         //Fetch the Renderer from the GameObject
-        rend = GetComponent<Renderer>();
-        player = gameObject.GetComponentInParent<Player>();
-        
+        initialization();
     }
 	
 	// Update is called once per frame
@@ -33,7 +33,7 @@ public class Champion : MonoBehaviour {
 
     public void Lost()
     {
-        rend.material.color = Color.red;
+        stateImage.color = new Color32(255, 0, 0, 100);
         StartCoroutine(DecreaseLife());
         hasFought = true;
     }
@@ -41,7 +41,7 @@ public class Champion : MonoBehaviour {
     public void Win()
     {
         //Set the main Color of the Material to green
-        rend.material.color = Color.green;
+        stateImage.color = new Color32(0 , 255, 0, 100);
         hasFought = true; 
 
     }
@@ -52,7 +52,7 @@ public class Champion : MonoBehaviour {
         this.def = Random.Range(1, 10);
     }
 
-    void OnMouseDown()
+    public void OnMouseDown()
     {
         if(this.hasFought != true) // can't be clicked if already fought
         {
@@ -79,6 +79,15 @@ public class Champion : MonoBehaviour {
         yield return null;
     }
 
+    public void initialization()
+    {
+        player = gameObject.GetComponentInParent<Player>();
+        stateImage = GetComponentInChildren<Image>();
+        card = GetComponent<CardDisplay>().card;
+        name = card.name;
+        atk = card.atq;
+        def = card.def;
+    }
 
 
 

@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdd277e20ab01e2409f344cc07b16b9f, type: 3}
+  m_Name: Chaton
+  m_EditorClassIdentifier: 
+  name: Chaton
+  artwork: {fileID: 21300000, guid: ff4e3cd56cd08c743878cb8cd7af9052, type: 3}
+  atq: 3
+  def: 6
