@@ -6,7 +6,7 @@ public class Champion : MonoBehaviour {
 
     public int atk;
     public int def;
-    private string title;
+    private string name;
     public Renderer rend;
     bool hasFought;
     public Player player;
@@ -17,6 +17,7 @@ public class Champion : MonoBehaviour {
         //Fetch the Renderer from the GameObject
         rend = GetComponent<Renderer>();
         player = gameObject.GetComponentInParent<Player>();
+        
     }
 	
 	// Update is called once per frame
