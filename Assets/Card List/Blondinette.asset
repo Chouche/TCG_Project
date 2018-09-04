@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdd277e20ab01e2409f344cc07b16b9f, type: 3}
   m_Name: Blondinette
   m_EditorClassIdentifier: 
-  name: 
-  artwork: {fileID: 0}
-  atq: 0
-  def: 0
+  name: Blondinette
+  artwork: {fileID: 21300000, guid: d39f0eddceb752044aa011d0ef3d436c, type: 3}
+  atq: 4
+  def: 3

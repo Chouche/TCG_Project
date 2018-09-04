@@ -8,7 +8,10 @@ public class Player : MonoBehaviour {
     public int life;
     public Renderer rend;
     public bool isDead;
-    public Text lifeText;
+    public Text lifeText, boostText;
+    public Slider boostSlider;
+    public int boost;
+    public 
 
     // Use this for initialization
     void Start () {
@@ -21,7 +24,9 @@ public class Player : MonoBehaviour {
 	void Update () {
         bool isDead = IsDead();
         CounterLife();
-	}
+        CounterBoost();
+
+    }
 
     public bool IsDead()
     {
@@ -36,6 +41,11 @@ public class Player : MonoBehaviour {
     public void CounterLife()
     {
         lifeText.text = life.ToString();
+    }
+
+    public void CounterBoost()
+    {
+        boostText.text = boost.ToString();
     }
 
 }

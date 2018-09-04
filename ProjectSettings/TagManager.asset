@@ -7,8 +7,6 @@ TagManager:
   - P1_Card
   - P2_Card
   - God
-  - P1_UI
-  - P2_UI
   layers:
   - Default
   - TransparentFX

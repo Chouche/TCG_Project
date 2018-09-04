@@ -8,7 +8,7 @@ public class Champion : MonoBehaviour {
     public Card card;
     public int atk;
     public int def;
-    public string name;
+    public new string name;
     bool hasFought;
     public Player player;
     public Image stateImage;
@@ -16,7 +16,6 @@ public class Champion : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        //Fetch the Renderer from the GameObject
         initialization();
     }
 	

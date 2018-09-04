@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class MainGame : MonoBehaviour {
 
@@ -28,6 +30,7 @@ public class MainGame : MonoBehaviour {
     }
 
 
+    
     public Champion selectedChampion1;
     public Champion selectedChampion2;
     public Champion winner, loser;
@@ -44,8 +47,8 @@ public class MainGame : MonoBehaviour {
         currentStep = 1;
         for(int i = 0; i < player1.Length; i++)
         {
-          player1[i] = GameObject.Find("Champion" + (1+ i)).GetComponent<Champion>();
-          player2[i] = GameObject.Find("Champion" + (5 + i)).GetComponent<Champion>();
+          player1[i] = GameObject.Find("Champion " + (1+ i)).GetComponent<Champion>();
+          player2[i] = GameObject.Find("Champion " + (5 + i)).GetComponent<Champion>();
             
         }
     }
@@ -69,6 +72,8 @@ public class MainGame : MonoBehaviour {
                 {
                     UI.transform.GetChild(0).gameObject.SetActive(false);
                     UI.transform.GetChild(1).gameObject.SetActive(true);
+                    UI.transform.GetChild(1).gameObject.transform.GetChild(1).GetComponent<Slider>().maxValue = selectedChampion1.transform.parent.gameObject.GetComponentInParent<Player>().boost; // Get the number of boost left from the parent "Player" of the champion
+
                 }
                 // print(champion1);
                 break;
@@ -78,6 +83,7 @@ public class MainGame : MonoBehaviour {
                 {
                     UI.transform.GetChild(0).gameObject.SetActive(false);
                     UI.transform.GetChild(1).gameObject.SetActive(true);
+                    UI.transform.GetChild(1).gameObject.transform.GetChild(1).GetComponent<Slider>().maxValue = selectedChampion2.transform.parent.gameObject.GetComponentInParent<Player>().boost; // Get the number of boost left from the parent "Player" of the champion
                 }
                 break;
             case 3:
