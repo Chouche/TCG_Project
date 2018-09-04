@@ -14,4 +14,4 @@ MonoBehaviour:
   name: Chaton
   artwork: {fileID: 21300000, guid: ff4e3cd56cd08c743878cb8cd7af9052, type: 3}
   atq: 3
-  def: 6
+  dmg: 3

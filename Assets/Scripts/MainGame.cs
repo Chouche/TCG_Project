@@ -112,11 +112,14 @@ public class MainGame : MonoBehaviour {
         if(currentStep == 1)
         {
             P1.boost -= Mathf.RoundToInt(boostSlider.value); // Take off boost used from the boost stack
+            selectedChampion1.atk *= Mathf.RoundToInt(boostSlider.value); 
             boostSlider.value = 0;
+
         }
         else
         {
             P2.boost -= Mathf.RoundToInt(boostSlider.value); // Take off boost used from the boost stack
+            selectedChampion2.atk *= Mathf.RoundToInt(boostSlider.value);
             boostSlider.value = 0;
         }
     }
@@ -152,32 +155,18 @@ public class MainGame : MonoBehaviour {
 
     IEnumerator FightCoroutine(Champion champ1, Champion champ2)
     {
-        int hpChamp1 = champ1.def;
-        int hpChamp2 = champ2.def;
 
-        print(hpChamp2);
-
-        while (hpChamp1 > 0 || hpChamp2 > 0)
+        if(champ1.atk >= champ2.atk)
         {
-            hpChamp2 -= champ1.atk; //champ 1 attaks champ 2
-            if (hpChamp2 <= 0)
-            {
-                print(hpChamp2);
-                loser = champ2;
-                winner = champ1;
-                break;
-            }
-
-            hpChamp1 -= champ2.atk; //champ 2 attaks champ 1
-            if (hpChamp1 <= 0)
-            {
-                loser = champ1;
-                winner = champ2;
-                break;
-            }
-
-            yield return null;
+            loser = champ2;
+            winner = champ1;
         }
+        else
+        {
+            loser = champ1;
+            winner = champ2;
+        }
+        
         yield return null;
     }
 

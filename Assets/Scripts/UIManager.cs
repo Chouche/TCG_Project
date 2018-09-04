@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class UIManager : MonoBehaviour {
 
     public Text m_InfoBoost;
-    public Slider boostSlider;
     
 
     public void FightButton() {

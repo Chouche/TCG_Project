@@ -10,7 +10,7 @@ public class Card : ScriptableObject {
     public Sprite artwork;
 
     public int atq;
-    public int def;
+    public int dmg;
 
     
 }

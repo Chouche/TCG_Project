@@ -7,7 +7,7 @@ public class Champion : MonoBehaviour {
 
     public Card card;
     public int atk;
-    public int def;
+    public int dmg;
     public new string name;
     bool hasFought;
     public Player player;
@@ -48,7 +48,7 @@ public class Champion : MonoBehaviour {
     private void RandomAtkandDef()
     {
         this.atk = Random.Range(1, 10);
-        this.def = Random.Range(1, 10);
+        this.dmg = Random.Range(1, 10);
     }
 
     public void OnMouseDown()
@@ -66,7 +66,7 @@ public class Champion : MonoBehaviour {
     IEnumerator DecreaseLife()
     {
          
-        int totalDamage = player.life - MainGame.Instance.winner.atk;
+        int totalDamage = player.life - MainGame.Instance.winner.dmg;
         print("TotalDamage " + totalDamage);
 
         while (player.life != totalDamage && player.life > 0)
@@ -85,7 +85,7 @@ public class Champion : MonoBehaviour {
         card = GetComponent<CardDisplay>().card;
         name = card.name;
         atk = card.atq;
-        def = card.def;
+        dmg = card.dmg;
     }
 
 

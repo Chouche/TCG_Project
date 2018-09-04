@@ -14,4 +14,4 @@ MonoBehaviour:
   name: Masochina
   artwork: {fileID: 21300000, guid: 401ee25d4acf9de48a39f0680ecf98c1, type: 3}
   atq: 4
-  def: 5
+  dmg: 2

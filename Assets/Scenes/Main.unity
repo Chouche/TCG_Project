@@ -385,7 +385,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   card: {fileID: 11400000, guid: 0b9d8e20d82916c43938c338a3ae54ef, type: 2}
   atk: 0
-  def: 0
+  dmg: 0
   name: 
   player: {fileID: 0}
   stateImage: {fileID: 0}
@@ -403,7 +403,7 @@ MonoBehaviour:
   card: {fileID: 11400000, guid: 0b9d8e20d82916c43938c338a3ae54ef, type: 2}
   nameText: {fileID: 2130365095}
   atqText: {fileID: 715858985}
-  defText: {fileID: 1342277341}
+  dmgText: {fileID: 1342277341}
   artworkImage: {fileID: 1439007777}
 --- !u!1 &167457747
 GameObject:
@@ -506,7 +506,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   card: {fileID: 0}
   atk: 0
-  def: 0
+  dmg: 0
   name: 
   player: {fileID: 0}
   stateImage: {fileID: 0}
@@ -1143,7 +1143,7 @@ MonoBehaviour:
   card: {fileID: 11400000, guid: ee859bdbff833cd458f848d4aca23030, type: 2}
   nameText: {fileID: 1788365955}
   atqText: {fileID: 264238750}
-  defText: {fileID: 1043930062}
+  dmgText: {fileID: 1043930062}
   artworkImage: {fileID: 1874119125}
 --- !u!114 &421877909
 MonoBehaviour:
@@ -1158,7 +1158,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   card: {fileID: 11400000, guid: ee859bdbff833cd458f848d4aca23030, type: 2}
   atk: 0
-  def: 0
+  dmg: 0
   name: 
   player: {fileID: 0}
   stateImage: {fileID: 0}
@@ -1209,10 +1209,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   life: 0
   rend: {fileID: 0}
-  isDead: 0
   lifeText: {fileID: 373160690}
   boostText: {fileID: 687613685}
-  boostSlider: {fileID: 0}
   boost: 15
 --- !u!1 &458127602
 GameObject:
@@ -1315,7 +1313,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   card: {fileID: 0}
   atk: 0
-  def: 0
+  dmg: 0
   name: 
   player: {fileID: 0}
   stateImage: {fileID: 0}
@@ -2019,7 +2017,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   card: {fileID: 11400000, guid: 1ff42411184b6f048be317cb7817e835, type: 2}
   atk: 0
-  def: 0
+  dmg: 0
   name: 
   player: {fileID: 0}
   stateImage: {fileID: 0}
@@ -2037,7 +2035,7 @@ MonoBehaviour:
   card: {fileID: 11400000, guid: 1ff42411184b6f048be317cb7817e835, type: 2}
   nameText: {fileID: 1918815230}
   atqText: {fileID: 315489551}
-  defText: {fileID: 1542980270}
+  dmgText: {fileID: 1542980270}
   artworkImage: {fileID: 824466635}
 --- !u!1 &715858983
 GameObject:
@@ -2347,7 +2345,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &764464046
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2662,6 +2660,17 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 534669906}
+        m_MethodName: BoostUsed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1459627824}
         m_MethodName: FightButton
         m_Mode: 1
@@ -2756,10 +2765,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   life: 0
   rend: {fileID: 0}
-  isDead: 0
   lifeText: {fileID: 491625317}
   boostText: {fileID: 346399907}
-  boostSlider: {fileID: 0}
   boost: 15
 --- !u!1 &1022958225
 GameObject:
@@ -3086,7 +3093,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   card: {fileID: 11400000, guid: efcb363e0cce18842875feba1f468f3c, type: 2}
   atk: 0
-  def: 0
+  dmg: 0
   name: 
   player: {fileID: 0}
   stateImage: {fileID: 0}
@@ -3104,7 +3111,7 @@ MonoBehaviour:
   card: {fileID: 11400000, guid: efcb363e0cce18842875feba1f468f3c, type: 2}
   nameText: {fileID: 119269421}
   atqText: {fileID: 1329558534}
-  defText: {fileID: 664597099}
+  dmgText: {fileID: 664597099}
   artworkImage: {fileID: 2124399119}
 --- !u!1 &1079938171
 GameObject:
@@ -3234,7 +3241,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   card: {fileID: 11400000, guid: 53fe54cc3206f124f87585a374007441, type: 2}
   atk: 0
-  def: 0
+  dmg: 0
   name: 
   player: {fileID: 0}
   stateImage: {fileID: 0}
@@ -3252,7 +3259,7 @@ MonoBehaviour:
   card: {fileID: 11400000, guid: 53fe54cc3206f124f87585a374007441, type: 2}
   nameText: {fileID: 1428505766}
   atqText: {fileID: 734834954}
-  defText: {fileID: 1380987427}
+  dmgText: {fileID: 1380987427}
   artworkImage: {fileID: 347216062}
 --- !u!1 &1195766231
 GameObject:
@@ -3358,7 +3365,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 19.9}
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1253404822
@@ -3732,7 +3739,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   card: {fileID: 11400000, guid: d406a76734881e843b0896612ab7c1e3, type: 2}
   atk: 0
-  def: 0
+  dmg: 0
   name: 
   player: {fileID: 0}
   stateImage: {fileID: 0}
@@ -3750,7 +3757,7 @@ MonoBehaviour:
   card: {fileID: 11400000, guid: d406a76734881e843b0896612ab7c1e3, type: 2}
   nameText: {fileID: 2090414736}
   atqText: {fileID: 1079938173}
-  defText: {fileID: 1393512649}
+  dmgText: {fileID: 1393512649}
   artworkImage: {fileID: 2014332950}
 --- !u!1 &1380987425
 GameObject:
@@ -4307,7 +4314,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_InfoBoost: {fileID: 1276182425}
-  boostSlider: {fileID: 0}
 --- !u!1 &1460302065
 GameObject:
   m_ObjectHideFlags: 0
@@ -4669,7 +4675,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   card: {fileID: 11400000, guid: 46aa6ce8e802a0c43a490557af2f7d65, type: 2}
   atk: 0
-  def: 0
+  dmg: 0
   name: 
   player: {fileID: 0}
   stateImage: {fileID: 0}
@@ -4687,7 +4693,7 @@ MonoBehaviour:
   card: {fileID: 11400000, guid: 46aa6ce8e802a0c43a490557af2f7d65, type: 2}
   nameText: {fileID: 1022958227}
   atqText: {fileID: 738427511}
-  defText: {fileID: 73669636}
+  dmgText: {fileID: 73669636}
   artworkImage: {fileID: 1195766233}
 --- !u!1 &1688756368
 GameObject:
@@ -4898,7 +4904,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   card: {fileID: 11400000, guid: c823cbe62c709de47a68da362e53df30, type: 2}
   atk: 0
-  def: 0
+  dmg: 0
   name: 
   player: {fileID: 0}
   stateImage: {fileID: 0}
@@ -4916,7 +4922,7 @@ MonoBehaviour:
   card: {fileID: 11400000, guid: c823cbe62c709de47a68da362e53df30, type: 2}
   nameText: {fileID: 2109061424}
   atqText: {fileID: 1879089341}
-  defText: {fileID: 1846809904}
+  dmgText: {fileID: 1846809904}
   artworkImage: {fileID: 721658185}
 --- !u!1 &1767786044
 GameObject:

@@ -9,7 +9,7 @@ public class CardDisplay : MonoBehaviour {
 
     public Text nameText;
     public Text atqText;
-    public Text defText;
+    public Text dmgText;
 
     public Image artworkImage;
 
@@ -18,7 +18,7 @@ public class CardDisplay : MonoBehaviour {
 	void Start () {
         nameText.text = card.name;
         atqText.text = card.atq.ToString();
-        defText.text = card.def.ToString();
+        dmgText.text = card.dmg.ToString();
         artworkImage.sprite = card.artwork;
 	}
 	

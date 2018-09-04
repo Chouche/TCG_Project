@@ -14,4 +14,4 @@ MonoBehaviour:
   name: Qilbi
   artwork: {fileID: 21300000, guid: 82c24856dbb50d841b8ecb596a0201e2, type: 3}
   atq: 5
-  def: 2
+  dmg: 1

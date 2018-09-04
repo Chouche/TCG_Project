@@ -7,9 +7,7 @@ public class Player : MonoBehaviour {
 
     public int life;
     public Renderer rend;
-    public bool isDead;
     public Text lifeText, boostText;
-    public Slider boostSlider;
     public int boost;
 
 

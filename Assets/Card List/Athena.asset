@@ -14,4 +14,4 @@ MonoBehaviour:
   name: Athena
   artwork: {fileID: 21300000, guid: 90430a94480952640bb8106ff62d6c56, type: 3}
   atq: 1
-  def: 15
+  dmg: 4
