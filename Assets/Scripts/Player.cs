@@ -11,7 +11,7 @@ public class Player : MonoBehaviour {
     public Text lifeText, boostText;
     public Slider boostSlider;
     public int boost;
-    public 
+
 
     // Use this for initialization
     void Start () {

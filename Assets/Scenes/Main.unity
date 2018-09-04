@@ -1727,6 +1727,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08776a5b9a8972440afe48f86a88afdd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  P1: {fileID: 952092452}
+  P2: {fileID: 455245456}
   selectedChampion1: {fileID: 0}
   selectedChampion2: {fileID: 0}
   winner: {fileID: 0}
@@ -1744,6 +1746,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   UI: {fileID: 1459627819}
+  boostSlider: {fileID: 1253404822}
 --- !u!1 &552084341
 GameObject:
   m_ObjectHideFlags: 0
@@ -4304,6 +4307,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_InfoBoost: {fileID: 1276182425}
+  boostSlider: {fileID: 0}
 --- !u!1 &1460302065
 GameObject:
   m_ObjectHideFlags: 0

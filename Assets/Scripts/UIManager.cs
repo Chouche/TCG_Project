@@ -6,10 +6,13 @@ using UnityEngine.UI;
 public class UIManager : MonoBehaviour {
 
     public Text m_InfoBoost;
+    public Slider boostSlider;
+    
 
     public void FightButton() {
         this.transform.GetChild(0).gameObject.SetActive(true); // Champions info active
         this.transform.GetChild(1).gameObject.SetActive(false);
+
         MainGame.Instance.IncrementStep();
     }
 
@@ -23,6 +26,7 @@ public class UIManager : MonoBehaviour {
     public void SliderValue(float valueSlider)
     {
         m_InfoBoost.text = valueSlider.ToString();
+       
     }
 
 }

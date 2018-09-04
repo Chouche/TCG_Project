@@ -30,7 +30,7 @@ public class MainGame : MonoBehaviour {
     }
 
 
-    
+    public Player P1, P2;
     public Champion selectedChampion1;
     public Champion selectedChampion2;
     public Champion winner, loser;
@@ -40,6 +40,7 @@ public class MainGame : MonoBehaviour {
     public Champion[] player1 = new Champion[4];
     public Champion[] player2 = new Champion[4];
     public GameObject UI;
+    public Slider boostSlider;
 
     // Use this for initialization
     void Start() {
@@ -83,10 +84,11 @@ public class MainGame : MonoBehaviour {
                 {
                     UI.transform.GetChild(0).gameObject.SetActive(false);
                     UI.transform.GetChild(1).gameObject.SetActive(true);
-                    UI.transform.GetChild(1).gameObject.transform.GetChild(1).GetComponent<Slider>().maxValue = selectedChampion2.transform.parent.gameObject.GetComponentInParent<Player>().boost; // Get the number of boost left from the parent "Player" of the champion
+                    boostSlider.maxValue = selectedChampion2.transform.parent.gameObject.GetComponentInParent<Player>().boost; // Get the number of boost left from the parent "Player" of the champion
                 }
                 break;
             case 3:
+                P2.boost -= Mathf.RoundToInt(boostSlider.value);// Take off boost used from the boost stack
                 Fight(selectedChampion1, selectedChampion2);
                 if (winner != null) IncrementStep();
                 break;
@@ -102,6 +104,20 @@ public class MainGame : MonoBehaviour {
                 break;
             default:
                 break;
+        }
+    }
+
+    public void BoostUsed()
+    {
+        if(currentStep == 1)
+        {
+            P1.boost -= Mathf.RoundToInt(boostSlider.value); // Take off boost used from the boost stack
+            boostSlider.value = 0;
+        }
+        else
+        {
+            P2.boost -= Mathf.RoundToInt(boostSlider.value); // Take off boost used from the boost stack
+            boostSlider.value = 0;
         }
     }
 
