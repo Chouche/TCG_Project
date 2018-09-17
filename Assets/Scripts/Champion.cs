@@ -12,6 +12,7 @@ public class Champion : MonoBehaviour {
     bool hasFought;
     public Player player;
     public Image stateImage;
+    public bool isSelected;
     
 
 	// Use this for initialization
@@ -20,9 +21,9 @@ public class Champion : MonoBehaviour {
     }
 	
 	// Update is called once per frame
-    void update()
+    void Update()
     {
-
+        selected();
     }
 
     public void UseAbility()
@@ -56,9 +57,8 @@ public class Champion : MonoBehaviour {
         if(this.hasFought != true) // can't be clicked if already fought
         {
             if (MainGame.Instance.currentStep == 1) MainGame.Instance.selectedChampion1 = this;
-            Debug.Log("the object was clicked");
-
             if (MainGame.Instance.currentStep == 2) MainGame.Instance.selectedChampion2 = this;
+         
         }
         
     }
@@ -67,7 +67,6 @@ public class Champion : MonoBehaviour {
     {
          
         int totalDamage = player.life - MainGame.Instance.winner.dmg;
-        print("TotalDamage " + totalDamage);
 
         while (player.life != totalDamage && player.life > 0)
         {
@@ -88,7 +87,20 @@ public class Champion : MonoBehaviour {
         dmg = card.dmg;
     }
 
-
+    public void selected()
+    {
+        if (isSelected == true && this == MainGame.Instance.selectedChampion1 && hasFought != true || isSelected == true && this == MainGame.Instance.selectedChampion2 && hasFought != true)
+        {
+            stateImage.color = new Color32(0, 0, 150, 255);
+        }
+        else
+        {
+            if (hasFought != true)
+            {
+                stateImage.color = new Color32(255, 255, 255, 255);
+            }
+        }
+    }
 
 
 }

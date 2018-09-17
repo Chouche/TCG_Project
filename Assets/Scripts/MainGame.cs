@@ -68,31 +68,50 @@ public class MainGame : MonoBehaviour {
         switch (currentStep)
         {
             case 1:
+                Debug.Log("Steeeeeeep 1 ");
                 // print("Pick champion 1");
                 if (selectedChampion1 != null && selectedChampion1.tag == "P1_Card")
                 {
                     UI.transform.GetChild(0).gameObject.SetActive(false);
                     UI.transform.GetChild(1).gameObject.SetActive(true);
                     UI.transform.GetChild(1).gameObject.transform.GetChild(1).GetComponent<Slider>().maxValue = selectedChampion1.transform.parent.gameObject.GetComponentInParent<Player>().boost; // Get the number of boost left from the parent "Player" of the champion
+                    selectedChampion1.isSelected = true;
 
+                }
+                else
+                {
+                    UI.transform.GetChild(0).gameObject.SetActive(true);
+                    UI.transform.GetChild(1).gameObject.SetActive(false);
+                    selectedChampion1 = null;
                 }
                 // print(champion1);
                 break;
             case 2:
+                Debug.Log("Steeeeeeep 2 ");
                 // print("Pick champion 2");
                 if (selectedChampion2 != null && selectedChampion2.tag == "P2_Card")
                 {
                     UI.transform.GetChild(0).gameObject.SetActive(false);
                     UI.transform.GetChild(1).gameObject.SetActive(true);
                     boostSlider.maxValue = selectedChampion2.transform.parent.gameObject.GetComponentInParent<Player>().boost; // Get the number of boost left from the parent "Player" of the champion
+                    selectedChampion2.isSelected = true;
+                   
+                }
+                else
+                {
+                    UI.transform.GetChild(0).gameObject.SetActive(true);
+                    UI.transform.GetChild(1).gameObject.SetActive(false);
+                    selectedChampion2 = null;
                 }
                 break;
             case 3:
+                Debug.Log("Steeeeeeep 3 ");
                 P2.boost -= Mathf.RoundToInt(boostSlider.value);// Take off boost used from the boost stack
                 Fight(selectedChampion1, selectedChampion2);
                 if (winner != null) IncrementStep();
                 break;
             case 4:
+                Debug.Log("Steeeeeeep 4 ");
                 winner.Win();
                 loser.Lost();
                 IncrementStep();
