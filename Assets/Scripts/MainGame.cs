@@ -68,7 +68,7 @@ public class MainGame : MonoBehaviour {
         switch (currentStep)
         {
             case 1:
-                Debug.Log("Steeeeeeep 1 ");
+               // Debug.Log("Steeeeeeep 1 ");
                 // print("Pick champion 1");
                 if (selectedChampion1 != null && selectedChampion1.tag == "P1_Card")
                 {
@@ -87,7 +87,7 @@ public class MainGame : MonoBehaviour {
                 // print(champion1);
                 break;
             case 2:
-                Debug.Log("Steeeeeeep 2 ");
+               // Debug.Log("Steeeeeeep 2 ");
                 // print("Pick champion 2");
                 if (selectedChampion2 != null && selectedChampion2.tag == "P2_Card")
                 {
@@ -105,19 +105,21 @@ public class MainGame : MonoBehaviour {
                 }
                 break;
             case 3:
-                Debug.Log("Steeeeeeep 3 ");
+                //Debug.Log("Steeeeeeep 3 ");
                 P2.boost -= Mathf.RoundToInt(boostSlider.value);// Take off boost used from the boost stack
                 Fight(selectedChampion1, selectedChampion2);
+                Debug.Log(selectedChampion1.atk + " selectedChamps");
+                Debug.Log(selectedChampion2.atk + " selectedChamps2");
                 if (winner != null) IncrementStep();
                 break;
             case 4:
-                Debug.Log("Steeeeeeep 4 ");
+               // Debug.Log("Steeeeeeep 4 ");
                 winner.Win();
                 loser.Lost();
                 IncrementStep();
                 break;
             case 5:
-                print("reinitialization");
+               // print("reinitialization");
                 IncrementRound();
                 reinitialization();
                 break;
@@ -131,14 +133,14 @@ public class MainGame : MonoBehaviour {
         if(currentStep == 1)
         {
             P1.boost -= Mathf.RoundToInt(boostSlider.value); // Take off boost used from the boost stack
-            selectedChampion1.atk *= Mathf.RoundToInt(boostSlider.value); 
+            selectedChampion1.atk *= Mathf.RoundToInt(boostSlider.value + 1); 
             boostSlider.value = 0;
 
         }
         else
         {
             P2.boost -= Mathf.RoundToInt(boostSlider.value); // Take off boost used from the boost stack
-            selectedChampion2.atk *= Mathf.RoundToInt(boostSlider.value);
+            selectedChampion2.atk *= Mathf.RoundToInt(boostSlider.value + 1);
             boostSlider.value = 0;
         }
     }
@@ -174,7 +176,8 @@ public class MainGame : MonoBehaviour {
 
     IEnumerator FightCoroutine(Champion champ1, Champion champ2)
     {
-
+        champ1.UseAbility();
+        champ2.UseAbility();
         if(champ1.atk >= champ2.atk)
         {
             loser = champ2;

@@ -20,11 +20,15 @@ public class AtkBoost : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-
+        
     }
 
     public void _UseAbility(int atk)
     {
+        Debug.Log(championScript.atk);
         championScript.atk += atk;
+        Debug.Log(championScript.atk);
     }
+
+
 }
