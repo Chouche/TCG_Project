@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Name: Rouquinette
   m_EditorClassIdentifier: 
   name: Rouquinette
+  race: Iop
   artwork: {fileID: 21300000, guid: ac0032a107d93004abad00268795f00d, type: 3}
   atq: 8
   dmg: 2
+  abilityValue: 0

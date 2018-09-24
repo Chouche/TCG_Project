@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Linq;
 
 
 public class MainGame : MonoBehaviour {
@@ -39,6 +40,8 @@ public class MainGame : MonoBehaviour {
     public int currentStep;
     public Champion[] player1 = new Champion[4];
     public Champion[] player2 = new Champion[4];
+    public string[] racesPlayer1 = new string[4];
+    public string[] racesPlayer2 = new string[4];
     public GameObject UI;
     public Slider boostSlider;
 
@@ -48,10 +51,26 @@ public class MainGame : MonoBehaviour {
         currentStep = 1;
         for(int i = 0; i < player1.Length; i++)
         {
-          player1[i] = GameObject.Find("Champion " + (1+ i)).GetComponent<Champion>();
-          player2[i] = GameObject.Find("Champion " + (5 + i)).GetComponent<Champion>();
+          player1[i] = GameObject.Find("Champion " + (1 + i)).GetComponent<Champion>();
+
+            Debug.Log(player1[i].race); 
             
+          player2[i] = GameObject.Find("Champion " + (5 + i)).GetComponent<Champion>();
+
+          racesPlayer1[i] = GameObject.Find("Champion " + (1 + i)).GetComponent<Champion>().race;
+          racesPlayer2[i] = GameObject.Find("Champion " + (5 + i)).GetComponent<Champion>().race;  
         }
+
+        //Check if players has cards of the same race and write what is the duplicate one.
+
+        
+        var duplicatesPlayer1 = racesPlayer1.GroupBy(g => g).Where(w => w.Count() > 1).Select(s => s.Key);
+        foreach (var d1 in duplicatesPlayer1) Debug.Log("List of duplicate races in Player 1 :" + d1);
+
+        var duplicatesPlayer2 = racesPlayer2.GroupBy(g => g).Where(w => w.Count() > 1).Select(s => s.Key);
+        foreach (var d2 in duplicatesPlayer2) Debug.Log("List of duplicate races in Player 2:" + d2);
+
+
     }
 
     // Update is called once per frame

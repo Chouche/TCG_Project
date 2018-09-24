@@ -6,11 +6,15 @@ using UnityEngine;
 public class Card : ScriptableObject {
 
     public new string name;
-
+    public string race;
+    
     public Sprite artwork;
 
     public int atq;
     public int dmg;
+
+    public string abilityName;
+    public int abilityValue;
 
     
 }

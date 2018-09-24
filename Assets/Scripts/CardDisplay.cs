@@ -10,6 +10,7 @@ public class CardDisplay : MonoBehaviour {
     public Text nameText;
     public Text atqText;
     public Text dmgText;
+    public Text raceText;
 
     public Image artworkImage;
 
@@ -20,6 +21,7 @@ public class CardDisplay : MonoBehaviour {
         atqText.text = card.atq.ToString();
         dmgText.text = card.dmg.ToString();
         artworkImage.sprite = card.artwork;
+        raceText.text = card.race;
 	}
 	
 }

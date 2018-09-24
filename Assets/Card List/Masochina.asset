@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Name: Masochina
   m_EditorClassIdentifier: 
   name: Masochina
+  race: Sacrieur
   artwork: {fileID: 21300000, guid: 401ee25d4acf9de48a39f0680ecf98c1, type: 3}
   atq: 4
   dmg: 2
+  abilityValue: 0

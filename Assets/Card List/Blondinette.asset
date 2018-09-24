@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Name: Blondinette
   m_EditorClassIdentifier: 
   name: Blondinette
+  race: Cra
   artwork: {fileID: 21300000, guid: d39f0eddceb752044aa011d0ef3d436c, type: 3}
   atq: 4
   dmg: 5
+  abilityValue: 0

@@ -113,6 +113,160 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &9553552
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9553553}
+  - component: {fileID: 9553555}
+  - component: {fileID: 9553554}
+  m_Layer: 5
+  m_Name: 'Race '
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &9553553
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 9553552}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 154068771}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -2.000061, y: -102.47659}
+  m_SizeDelta: {x: 96, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &9553554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 9553552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 40
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Race
+
+'
+--- !u!222 &9553555
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 9553552}
+  m_CullTransparentMesh: 0
+--- !u!1 &19878509
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 19878510}
+  - component: {fileID: 19878512}
+  - component: {fileID: 19878511}
+  m_Layer: 5
+  m_Name: Race
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &19878510
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 19878509}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1675981106}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -2, y: -102}
+  m_SizeDelta: {x: 96, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &19878511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 19878509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 40
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Race
+
+'
+--- !u!222 &19878512
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 19878509}
+  m_CullTransparentMesh: 0
 --- !u!1 &73669634
 GameObject:
   m_ObjectHideFlags: 0
@@ -364,6 +518,7 @@ RectTransform:
   - {fileID: 715858984}
   - {fileID: 1342277340}
   - {fileID: 1706673569}
+  - {fileID: 9553553}
   m_Father: {fileID: 455245455}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -386,9 +541,13 @@ MonoBehaviour:
   card: {fileID: 11400000, guid: 0b9d8e20d82916c43938c338a3ae54ef, type: 2}
   atk: 0
   dmg: 0
+  abilityValue: 0
   name: 
+  race: 
   player: {fileID: 0}
   stateImage: {fileID: 0}
+  isSelected: 0
+  abilityName: 
 --- !u!114 &154068773
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -404,6 +563,7 @@ MonoBehaviour:
   nameText: {fileID: 2130365095}
   atqText: {fileID: 715858985}
   dmgText: {fileID: 1342277341}
+  raceText: {fileID: 9553554}
   artworkImage: {fileID: 1439007777}
 --- !u!1 &167457747
 GameObject:
@@ -507,9 +667,13 @@ MonoBehaviour:
   card: {fileID: 0}
   atk: 0
   dmg: 0
+  abilityValue: 0
   name: 
+  race: 
   player: {fileID: 0}
   stateImage: {fileID: 0}
+  isSelected: 0
+  abilityName: 
 --- !u!1 &170076733
 GameObject:
   m_ObjectHideFlags: 0
@@ -650,6 +814,83 @@ CanvasRenderer:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 264238748}
+  m_CullTransparentMesh: 0
+--- !u!1 &268317106
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 268317107}
+  - component: {fileID: 268317109}
+  - component: {fileID: 268317108}
+  m_Layer: 5
+  m_Name: 'Race '
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &268317107
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 268317106}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1193337138}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -102.47659}
+  m_SizeDelta: {x: 96, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &268317108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 268317106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 40
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Race
+
+'
+--- !u!222 &268317109
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 268317106}
   m_CullTransparentMesh: 0
 --- !u!1 &293776652
 GameObject:
@@ -1089,6 +1330,83 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 386391257}
   m_CullTransparentMesh: 0
+--- !u!1 &413679207
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 413679208}
+  - component: {fileID: 413679210}
+  - component: {fileID: 413679209}
+  m_Layer: 5
+  m_Name: Race
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &413679208
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 413679207}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1710259309}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 1, y: -102}
+  m_SizeDelta: {x: 96, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &413679209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 413679207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 40
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Race
+
+'
+--- !u!222 &413679210
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 413679207}
+  m_CullTransparentMesh: 0
 --- !u!1 &421877906
 GameObject:
   m_ObjectHideFlags: 0
@@ -1121,6 +1439,7 @@ RectTransform:
   - {fileID: 264238749}
   - {fileID: 1043930061}
   - {fileID: 2000153806}
+  - {fileID: 927661311}
   m_Father: {fileID: 952092451}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1144,6 +1463,7 @@ MonoBehaviour:
   nameText: {fileID: 1788365955}
   atqText: {fileID: 264238750}
   dmgText: {fileID: 1043930062}
+  raceText: {fileID: 927661312}
   artworkImage: {fileID: 1874119125}
 --- !u!114 &421877909
 MonoBehaviour:
@@ -1159,9 +1479,13 @@ MonoBehaviour:
   card: {fileID: 11400000, guid: ee859bdbff833cd458f848d4aca23030, type: 2}
   atk: 0
   dmg: 0
+  abilityValue: 0
   name: 
+  race: 
   player: {fileID: 0}
   stateImage: {fileID: 0}
+  isSelected: 0
+  abilityName: 
 --- !u!1 &455245454
 GameObject:
   m_ObjectHideFlags: 0
@@ -1314,9 +1638,13 @@ MonoBehaviour:
   card: {fileID: 0}
   atk: 0
   dmg: 0
+  abilityValue: 0
   name: 
+  race: 
   player: {fileID: 0}
   stateImage: {fileID: 0}
+  isSelected: 0
+  abilityName: 
 --- !u!1 &458864424
 GameObject:
   m_ObjectHideFlags: 0
@@ -1743,6 +2071,16 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  racesPlayer1:
+  - 
+  - 
+  - 
+  - 
+  racesPlayer2:
+  - 
+  - 
+  - 
+  - 
   UI: {fileID: 1459627819}
   boostSlider: {fileID: 1253404822}
 --- !u!1 &552084341
@@ -1813,6 +2151,83 @@ CanvasRenderer:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 552084341}
+  m_CullTransparentMesh: 0
+--- !u!1 &575936134
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 575936135}
+  - component: {fileID: 575936137}
+  - component: {fileID: 575936136}
+  m_Layer: 5
+  m_Name: 'Race '
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &575936135
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 575936134}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 710067492}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 2, y: -102.47659}
+  m_SizeDelta: {x: 96, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &575936136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 575936134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 40
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Race
+
+'
+--- !u!222 &575936137
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 575936134}
   m_CullTransparentMesh: 0
 --- !u!1 &664597097
 GameObject:
@@ -1996,6 +2411,7 @@ RectTransform:
   - {fileID: 315489550}
   - {fileID: 1542980269}
   - {fileID: 1027588303}
+  - {fileID: 575936135}
   m_Father: {fileID: 455245455}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2018,9 +2434,13 @@ MonoBehaviour:
   card: {fileID: 11400000, guid: 1ff42411184b6f048be317cb7817e835, type: 2}
   atk: 0
   dmg: 0
+  abilityValue: 0
   name: 
+  race: 
   player: {fileID: 0}
   stateImage: {fileID: 0}
+  isSelected: 0
+  abilityName: 
 --- !u!114 &710067494
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2032,10 +2452,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b839d2e6e414714083a49dc65128675, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  card: {fileID: 11400000, guid: 1ff42411184b6f048be317cb7817e835, type: 2}
+  card: {fileID: 11400000, guid: bd2f61d4362aa154ba828a9ca62cfc77, type: 2}
   nameText: {fileID: 1918815230}
   atqText: {fileID: 315489551}
   dmgText: {fileID: 1542980270}
+  raceText: {fileID: 575936136}
   artworkImage: {fileID: 824466635}
 --- !u!1 &715858983
 GameObject:
@@ -2718,6 +3139,83 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 909235528}
   m_CullTransparentMesh: 1
+--- !u!1 &927661310
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 927661311}
+  - component: {fileID: 927661313}
+  - component: {fileID: 927661312}
+  m_Layer: 5
+  m_Name: Race
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &927661311
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 927661310}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 421877907}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 2, y: -102}
+  m_SizeDelta: {x: 96, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &927661312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 927661310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 40
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Race
+
+'
+--- !u!222 &927661313
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 927661310}
+  m_CullTransparentMesh: 0
 --- !u!1 &952092450
 GameObject:
   m_ObjectHideFlags: 0
@@ -3072,6 +3570,7 @@ RectTransform:
   - {fileID: 1329558533}
   - {fileID: 664597098}
   - {fileID: 1405437715}
+  - {fileID: 1108983608}
   m_Father: {fileID: 952092451}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3094,9 +3593,13 @@ MonoBehaviour:
   card: {fileID: 11400000, guid: efcb363e0cce18842875feba1f468f3c, type: 2}
   atk: 0
   dmg: 0
+  abilityValue: 0
   name: 
+  race: 
   player: {fileID: 0}
   stateImage: {fileID: 0}
+  isSelected: 0
+  abilityName: 
 --- !u!114 &1045461008
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3112,6 +3615,7 @@ MonoBehaviour:
   nameText: {fileID: 119269421}
   atqText: {fileID: 1329558534}
   dmgText: {fileID: 664597099}
+  raceText: {fileID: 1108983609}
   artworkImage: {fileID: 2124399119}
 --- !u!1 &1079938171
 GameObject:
@@ -3188,6 +3692,83 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1079938171}
   m_CullTransparentMesh: 0
+--- !u!1 &1108983607
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1108983608}
+  - component: {fileID: 1108983610}
+  - component: {fileID: 1108983609}
+  m_Layer: 5
+  m_Name: Race
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1108983608
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1108983607}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1045461006}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -102}
+  m_SizeDelta: {x: 96, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1108983609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1108983607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 40
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Race
+
+'
+--- !u!222 &1108983610
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1108983607}
+  m_CullTransparentMesh: 0
 --- !u!1 &1193337137
 GameObject:
   m_ObjectHideFlags: 0
@@ -3220,6 +3801,7 @@ RectTransform:
   - {fileID: 734834953}
   - {fileID: 1380987426}
   - {fileID: 2060935229}
+  - {fileID: 268317107}
   m_Father: {fileID: 455245455}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3242,9 +3824,13 @@ MonoBehaviour:
   card: {fileID: 11400000, guid: 53fe54cc3206f124f87585a374007441, type: 2}
   atk: 0
   dmg: 0
+  abilityValue: 0
   name: 
+  race: 
   player: {fileID: 0}
   stateImage: {fileID: 0}
+  isSelected: 0
+  abilityName: 
 --- !u!114 &1193337140
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3260,6 +3846,7 @@ MonoBehaviour:
   nameText: {fileID: 1428505766}
   atqText: {fileID: 734834954}
   dmgText: {fileID: 1380987427}
+  raceText: {fileID: 268317108}
   artworkImage: {fileID: 347216062}
 --- !u!1 &1195766231
 GameObject:
@@ -3718,6 +4305,7 @@ RectTransform:
   - {fileID: 1079938172}
   - {fileID: 1393512648}
   - {fileID: 1460302066}
+  - {fileID: 2069258158}
   m_Father: {fileID: 455245455}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3740,9 +4328,13 @@ MonoBehaviour:
   card: {fileID: 11400000, guid: d406a76734881e843b0896612ab7c1e3, type: 2}
   atk: 0
   dmg: 0
+  abilityValue: 0
   name: 
+  race: 
   player: {fileID: 0}
   stateImage: {fileID: 0}
+  isSelected: 0
+  abilityName: 
 --- !u!114 &1370531516
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3758,6 +4350,7 @@ MonoBehaviour:
   nameText: {fileID: 2090414736}
   atqText: {fileID: 1079938173}
   dmgText: {fileID: 1393512649}
+  raceText: {fileID: 2069258159}
   artworkImage: {fileID: 2014332950}
 --- !u!1 &1380987425
 GameObject:
@@ -4654,6 +5247,7 @@ RectTransform:
   - {fileID: 738427510}
   - {fileID: 73669635}
   - {fileID: 505195363}
+  - {fileID: 19878510}
   m_Father: {fileID: 952092451}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4676,9 +5270,13 @@ MonoBehaviour:
   card: {fileID: 11400000, guid: 46aa6ce8e802a0c43a490557af2f7d65, type: 2}
   atk: 0
   dmg: 0
+  abilityValue: 0
   name: 
+  race: 
   player: {fileID: 0}
   stateImage: {fileID: 0}
+  isSelected: 0
+  abilityName: 
 --- !u!114 &1675981108
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4694,6 +5292,7 @@ MonoBehaviour:
   nameText: {fileID: 1022958227}
   atqText: {fileID: 738427511}
   dmgText: {fileID: 73669636}
+  raceText: {fileID: 19878511}
   artworkImage: {fileID: 1195766233}
 --- !u!1 &1688756368
 GameObject:
@@ -4883,6 +5482,7 @@ RectTransform:
   - {fileID: 1879089340}
   - {fileID: 1846809903}
   - {fileID: 458864425}
+  - {fileID: 413679208}
   m_Father: {fileID: 952092451}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4905,9 +5505,13 @@ MonoBehaviour:
   card: {fileID: 11400000, guid: c823cbe62c709de47a68da362e53df30, type: 2}
   atk: 0
   dmg: 0
+  abilityValue: 0
   name: 
+  race: 
   player: {fileID: 0}
   stateImage: {fileID: 0}
+  isSelected: 0
+  abilityName: 
 --- !u!114 &1710259311
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4923,6 +5527,7 @@ MonoBehaviour:
   nameText: {fileID: 2109061424}
   atqText: {fileID: 1879089341}
   dmgText: {fileID: 1846809904}
+  raceText: {fileID: 413679209}
   artworkImage: {fileID: 721658185}
 --- !u!1 &1767786044
 GameObject:
@@ -5760,6 +6365,83 @@ CanvasRenderer:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2060935228}
+  m_CullTransparentMesh: 0
+--- !u!1 &2069258157
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2069258158}
+  - component: {fileID: 2069258160}
+  - component: {fileID: 2069258159}
+  m_Layer: 5
+  m_Name: 'Race '
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2069258158
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2069258157}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1370531514}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.9998779, y: -102.47659}
+  m_SizeDelta: {x: 96, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2069258159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2069258157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 40
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Race
+
+'
+--- !u!222 &2069258160
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2069258157}
   m_CullTransparentMesh: 0
 --- !u!1 &2090414734
 GameObject:

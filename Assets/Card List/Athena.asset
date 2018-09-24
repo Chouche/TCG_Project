@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Name: Athena
   m_EditorClassIdentifier: 
   name: Athena
+  race: Feca
   artwork: {fileID: 21300000, guid: 90430a94480952640bb8106ff62d6c56, type: 3}
   atq: 1
   dmg: 4
+  abilityValue: 0

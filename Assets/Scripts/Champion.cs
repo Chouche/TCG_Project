@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -8,15 +9,18 @@ public class Champion : MonoBehaviour {
     public Card card;
     public int atk;
     public int dmg;
+    public int abilityValue;
     public new string name;
+    public string race;
     bool hasFought;
     public Player player;
     public Image stateImage;
     public bool isSelected;
+    public string abilityName;
     
 
 	// Use this for initialization
-	void Start () {
+	void Awake () {
         initialization();
     }
 	
@@ -28,7 +32,7 @@ public class Champion : MonoBehaviour {
 
     public void UseAbility()
     {
-        SendMessage("_UseAbility",5);
+        SendMessage("_UseAbility",abilityValue);
     }
 
     public void Lost()
@@ -48,8 +52,8 @@ public class Champion : MonoBehaviour {
 
     private void RandomAtkandDef()
     {
-        this.atk = Random.Range(1, 10);
-        this.dmg = Random.Range(1, 10);
+        this.atk = UnityEngine.Random.Range(1, 10);
+        this.dmg = UnityEngine.Random.Range(1, 10);
     }
 
     public void OnMouseDown()
@@ -79,12 +83,17 @@ public class Champion : MonoBehaviour {
 
     public void initialization()
     {
+        
         player = gameObject.GetComponentInParent<Player>();
         stateImage = GetComponentInChildren<Image>();
         card = GetComponent<CardDisplay>().card;
+        race = card.race;
         name = card.name;
         atk = card.atq;
         dmg = card.dmg;
+        abilityValue = card.abilityValue;
+        this.gameObject.AddComponent(Type.GetType(card.abilityName));
+
     }
 
     public void selected()

@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Name: Blue
   m_EditorClassIdentifier: 
   name: Blue
+  race: Osamodas
   artwork: {fileID: 21300000, guid: c3c1d02e70677ba488c4462107c08442, type: 3}
   atq: 3
   dmg: 5
+  abilityValue: 0
