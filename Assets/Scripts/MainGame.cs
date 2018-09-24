@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using System.Linq;
+
 
 
 public class MainGame : MonoBehaviour {
@@ -57,18 +57,19 @@ public class MainGame : MonoBehaviour {
             
           player2[i] = GameObject.Find("Champion " + (5 + i)).GetComponent<Champion>();
 
-          racesPlayer1[i] = GameObject.Find("Champion " + (1 + i)).GetComponent<Champion>().race;
-          racesPlayer2[i] = GameObject.Find("Champion " + (5 + i)).GetComponent<Champion>().race;  
+          racesPlayer1[i] = player1[i].race;
+          racesPlayer2[i] = player2[i].race;  
+           
         }
 
-        //Check if players has cards of the same race and write what is the duplicate one.
-
+        //Check if players has cards of the same race and add bonuses it exits
+        for(int i = 0; i < player1.Length; i++)
+        {
+            player1[i].checkIfSameRace();
+            player2[i].checkIfSameRace();
+        }
         
-        var duplicatesPlayer1 = racesPlayer1.GroupBy(g => g).Where(w => w.Count() > 1).Select(s => s.Key);
-        foreach (var d1 in duplicatesPlayer1) Debug.Log("List of duplicate races in Player 1 :" + d1);
-
-        var duplicatesPlayer2 = racesPlayer2.GroupBy(g => g).Where(w => w.Count() > 1).Select(s => s.Key);
-        foreach (var d2 in duplicatesPlayer2) Debug.Log("List of duplicate races in Player 2:" + d2);
+        
 
 
     }
@@ -195,8 +196,8 @@ public class MainGame : MonoBehaviour {
 
     IEnumerator FightCoroutine(Champion champ1, Champion champ2)
     {
-        champ1.UseAbility();
-        champ2.UseAbility();
+        champ1.UseAbilityAndBonus();
+        champ2.UseAbilityAndBonus();
         if(champ1.atk >= champ2.atk)
         {
             loser = champ2;

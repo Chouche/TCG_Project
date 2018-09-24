@@ -17,4 +17,6 @@ MonoBehaviour:
   atq: 8
   dmg: 6
   abilityName: AtkBoost
+  bonusName: DmgBoost
   abilityValue: 2
+  bonusValue: 5

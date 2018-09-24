@@ -3,36 +3,43 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Linq;
 
 public class Champion : MonoBehaviour {
 
     public Card card;
     public int atk;
     public int dmg;
-    public int abilityValue;
+    public int abilityValue, bonusValue;
     public new string name;
     public string race;
     bool hasFought;
     public Player player;
     public Image stateImage;
     public bool isSelected;
-    public string abilityName;
+    public string abilityName, bonusName;
     
 
 	// Use this for initialization
 	void Awake () {
         initialization();
     }
-	
-	// Update is called once per frame
+
+    void Start()
+    {
+
+    }
+
+    // Update is called once per frame
     void Update()
     {
         selected();
     }
 
-    public void UseAbility()
+    public void UseAbilityAndBonus()
     {
         SendMessage("_UseAbility",abilityValue);
+        SendMessage("_UseAbility",bonusValue);
     }
 
     public void Lost()
@@ -92,7 +99,9 @@ public class Champion : MonoBehaviour {
         atk = card.atq;
         dmg = card.dmg;
         abilityValue = card.abilityValue;
+        bonusValue = card.bonusValue;
         this.gameObject.AddComponent(Type.GetType(card.abilityName));
+        
 
     }
 
@@ -109,6 +118,37 @@ public class Champion : MonoBehaviour {
                 stateImage.color = new Color32(255, 255, 255, 255);
             }
         }
+    }
+
+    public void checkIfSameRace()
+    {
+        
+        if (player.id == 1)
+        {
+            var duplicates1 = MainGame.Instance.racesPlayer1.GroupBy(g => g).Where(w => w.Count() > 1).Select(s => s.Key);
+            foreach (var d1 in duplicates1)
+            {
+                
+                Debug.Log("List of duplicate races in Player 1 :" + d1);
+                if (this.race == d1) this.gameObject.AddComponent(Type.GetType(card.bonusName)); ;
+            }
+        }
+        else
+        {
+
+            var duplicates2 = MainGame.Instance.racesPlayer2.GroupBy(g => g).Where(w => w.Count() > 1).Select(s => s.Key);
+            foreach (var d2 in duplicates2)
+            {
+                Debug.Log("List of duplicate races in Player 2:" + d2 + "name" + this.name);
+                
+                if (this.race == d2) this.gameObject.AddComponent(Type.GetType(card.bonusName)); ;
+            }
+        }
+
+     
+
+
+
     }
 
 

@@ -542,12 +542,14 @@ MonoBehaviour:
   atk: 0
   dmg: 0
   abilityValue: 0
+  bonusValue: 0
   name: 
   race: 
   player: {fileID: 0}
   stateImage: {fileID: 0}
   isSelected: 0
   abilityName: 
+  bonusName: 
 --- !u!114 &154068773
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -668,12 +670,14 @@ MonoBehaviour:
   atk: 0
   dmg: 0
   abilityValue: 0
+  bonusValue: 0
   name: 
   race: 
   player: {fileID: 0}
   stateImage: {fileID: 0}
   isSelected: 0
   abilityName: 
+  bonusName: 
 --- !u!1 &170076733
 GameObject:
   m_ObjectHideFlags: 0
@@ -1480,12 +1484,14 @@ MonoBehaviour:
   atk: 0
   dmg: 0
   abilityValue: 0
+  bonusValue: 0
   name: 
   race: 
   player: {fileID: 0}
   stateImage: {fileID: 0}
   isSelected: 0
   abilityName: 
+  bonusName: 
 --- !u!1 &455245454
 GameObject:
   m_ObjectHideFlags: 0
@@ -1536,6 +1542,7 @@ MonoBehaviour:
   lifeText: {fileID: 373160690}
   boostText: {fileID: 687613685}
   boost: 15
+  id: 2
 --- !u!1 &458127602
 GameObject:
   m_ObjectHideFlags: 0
@@ -1639,12 +1646,14 @@ MonoBehaviour:
   atk: 0
   dmg: 0
   abilityValue: 0
+  bonusValue: 0
   name: 
   race: 
   player: {fileID: 0}
   stateImage: {fileID: 0}
   isSelected: 0
   abilityName: 
+  bonusName: 
 --- !u!1 &458864424
 GameObject:
   m_ObjectHideFlags: 0
@@ -2435,12 +2444,14 @@ MonoBehaviour:
   atk: 0
   dmg: 0
   abilityValue: 0
+  bonusValue: 0
   name: 
   race: 
   player: {fileID: 0}
   stateImage: {fileID: 0}
   isSelected: 0
   abilityName: 
+  bonusName: 
 --- !u!114 &710067494
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3081,7 +3092,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 534669906}
+      - m_Target: {fileID: 0}
         m_MethodName: BoostUsed
         m_Mode: 1
         m_Arguments:
@@ -3266,6 +3277,7 @@ MonoBehaviour:
   lifeText: {fileID: 491625317}
   boostText: {fileID: 346399907}
   boost: 15
+  id: 1
 --- !u!1 &1022958225
 GameObject:
   m_ObjectHideFlags: 0
@@ -3594,12 +3606,14 @@ MonoBehaviour:
   atk: 0
   dmg: 0
   abilityValue: 0
+  bonusValue: 0
   name: 
   race: 
   player: {fileID: 0}
   stateImage: {fileID: 0}
   isSelected: 0
   abilityName: 
+  bonusName: 
 --- !u!114 &1045461008
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3825,12 +3839,14 @@ MonoBehaviour:
   atk: 0
   dmg: 0
   abilityValue: 0
+  bonusValue: 0
   name: 
   race: 
   player: {fileID: 0}
   stateImage: {fileID: 0}
   isSelected: 0
   abilityName: 
+  bonusName: 
 --- !u!114 &1193337140
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4329,12 +4345,14 @@ MonoBehaviour:
   atk: 0
   dmg: 0
   abilityValue: 0
+  bonusValue: 0
   name: 
   race: 
   player: {fileID: 0}
   stateImage: {fileID: 0}
   isSelected: 0
   abilityName: 
+  bonusName: 
 --- !u!114 &1370531516
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5271,12 +5289,14 @@ MonoBehaviour:
   atk: 0
   dmg: 0
   abilityValue: 0
+  bonusValue: 0
   name: 
   race: 
   player: {fileID: 0}
   stateImage: {fileID: 0}
   isSelected: 0
   abilityName: 
+  bonusName: 
 --- !u!114 &1675981108
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5506,12 +5526,14 @@ MonoBehaviour:
   atk: 0
   dmg: 0
   abilityValue: 0
+  bonusValue: 0
   name: 
   race: 
   player: {fileID: 0}
   stateImage: {fileID: 0}
   isSelected: 0
   abilityName: 
+  bonusName: 
 --- !u!114 &1710259311
 MonoBehaviour:
   m_ObjectHideFlags: 0

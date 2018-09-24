@@ -16,4 +16,7 @@ MonoBehaviour:
   artwork: {fileID: 21300000, guid: b5bc485b129d07d42ade2575bb731516, type: 3}
   atq: 2
   dmg: 6
+  abilityName: AtkBoost
+  bonusName: DmgBoost
   abilityValue: 0
+  bonusValue: 0

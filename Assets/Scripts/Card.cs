@@ -13,8 +13,8 @@ public class Card : ScriptableObject {
     public int atq;
     public int dmg;
 
-    public string abilityName;
-    public int abilityValue;
+    public string abilityName, bonusName;
+    public int abilityValue, bonusValue;
 
     
 }

@@ -9,6 +9,7 @@ public class Player : MonoBehaviour {
     public Renderer rend;
     public Text lifeText, boostText;
     public int boost;
+    public int id;
 
 
     // Use this for initialization
